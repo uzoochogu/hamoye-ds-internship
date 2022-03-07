@@ -35,9 +35,13 @@ Because of the direct relationship between 'stab' and 'stabf' ('stabf' = 'stable
 
 2. Then I used the standard scaler to transform the train set (x_train, y_train) and the test set (x_test). 
 
-3. Then I used scikit-learn to train a random forest and extra trees classifier. 
+3. After that I used scikit-learn to train a random forest and extra trees classifier. 
 
-4. Finally I used xgboost and lightgbm to train an extreme boosting model and a light gradient boosting model.  
+4. Finally I used xgboost and lightgbm to train an extreme boosting model and a light gradient boosting model and also check their various accuracies on the test set. 
+
+5. As an extra step, I tuned the extra trees classifier using a Randomized CV and obtained a better accuracy.
+
+6. The Light Gradient Boosted Machine (LightGBM) produced the best accuracy on the test set (acc = 0.9365 ).
 
 
 ` (Note: I used random_state = 1 for training all models and evaluations on the test set.) `
